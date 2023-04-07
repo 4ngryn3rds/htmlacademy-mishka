@@ -1,0 +1,186 @@
+.header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 89px;
+    align-items: center;
+    border: 1px solid #00000019;
+
+    &__menu {
+        cursor: pointer;
+    }
+
+    &__rightbox,
+    &__leftbox {
+        max-width: 450px;
+        line-height: 88px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        column-gap: 35px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #000;
+        white-space: nowrap;
+    }
+
+    &__search {
+        width: 82px;
+        border-left: 1px solid #00000019;
+        border-right: 1px solid #00000019;
+        text-align: center;
+        fill: #63D1BB;
+
+
+        &:hover {
+            fill: #63D1BB;
+            cursor: pointer;
+        }
+    }
+
+    &__cart-icon {
+        width: 82px;
+        text-align: center;
+        
+        &:hover {
+            fill: #63D1BB;
+            cursor: pointer;
+        }
+    }
+
+    @media screen and (min-width: 1150px) {
+        &__mobile,
+        &__tablet-logo {
+            display: none;
+        }
+                
+        &__leftbox,
+        &__rightbox {
+            position: relative;
+        }
+
+        &__catalog-row {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            padding: 31px 0px;
+            font-weight: 700;
+        }
+
+        &__catalog-row &__item:first-child {
+            padding-right: 35px;
+            border-right: 1px solid #00000019;
+        }
+
+        &__addition-row {
+            font-size: 15px;
+            font-family: 'Open Sans', sans-serif;
+            position: absolute;
+            font-weight: 700;
+            bottom: -34px;
+            z-index: 1;
+        }
+
+        &__rightbox-inner {
+            display: flex;
+            padding: 31px 0px;
+        }
+
+        &__cart-info {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            padding-right: 50px;
+            font-weight: 700;
+        }
+
+        &__delivery {
+            position: absolute;
+            bottom: -34px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            right: 0px;
+            z-index: 1;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1149px) {
+        &__mobile {
+            display: none;
+        }
+
+        &__tablet-logo {
+            position: relative;
+            vertical-align: middle;
+        }
+
+        &__leftbox,
+        &__rightbox {
+            position: relative;
+        }
+
+        &__catalog-row {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            position: absolute;
+            bottom: -34px;
+            line-height: 25px;
+            font-weight: 700;
+            z-index: 1;
+        }
+
+        &__middlebox,
+        &__addition-row {
+            display: none;
+        }
+
+        &__rightbox-inner {
+            display: flex;
+        }
+        
+        &__cart-info {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 17px;
+            padding-right: 50px;
+            font-weight: 700;
+        }
+        
+        &__delivery {
+            position: absolute;
+            bottom: -34px;
+            right: 0px;
+            line-height: 25px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            z-index: 1;
+        }
+
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__leftbox,
+        &__middlebox,
+        &__rightbox {
+            display: none;
+        }
+
+        &__logo-mobile {
+            position: relative;
+            margin-left: -43px;
+            left: 50%;
+        }
+    }
+}
+

@@ -1,0 +1,167 @@
+.reviews {
+    position: relative;
+    background-color: #fff;
+    padding-bottom: 51px;
+
+    &:after {
+        position: absolute;
+        content: "";
+        background-image: url('../assets/images/zigzag-line-mobile.svg');
+        background-size: auto;
+        height: 6px;
+        width: 100%;
+        bottom: 0px;
+    }
+
+    @media screen and (min-width:768px) {
+            background-image: url('../assets/images/review-bg.jpg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            padding-top: 45px;
+            padding-bottom: 47px;
+            margin-bottom: 85px;
+            
+            &:after {
+                background-image: url('../assets/images/zigzag-line-tablet.svg');
+                height: 17px;
+                bottom: -85px;
+            }
+    }
+
+    @media screen and (min-width:1150px) {
+        margin: 0px 50px;
+        margin-bottom: 90px;
+
+        &:after {
+            background-image: url('../assets/images/zigzag-line-desktop.svg');
+            height: 23px;
+            bottom: -85px;
+        }
+    }
+    
+    &__inner {
+        @media screen and (min-width:768px) {
+            display: grid;
+            grid-template-areas:
+            "title button"
+            "content content"
+            "author arrows";
+            margin-left: 0;
+        }
+        
+        @media screen and (min-width:768px) {
+            max-width: 1100px;
+        }
+    }
+
+    &__title {
+        grid-area: title;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        padding: 38px 0px;
+
+        @media screen and (min-width:768px) {
+            font-size: 43px;
+        }
+
+        @media screen and (min-width:1150px) {
+            font-size: 53px;
+        }
+    }
+
+    &__review {
+        grid-area: content;
+        padding-top: 14px;
+        padding-bottom: 33px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        max-width: 875px;
+
+        @media screen and (min-width:768px) {
+            font-size: 17px;
+            padding-top: 0px;
+            padding-bottom: 61px;
+        }
+    }
+
+    &__author {
+        grid-area: author;
+    }
+
+    &__author-name {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 17px;
+        padding-bottom: 10px;
+        
+        @media screen and (min-width:768px) {
+            font-size: 18px;
+        }
+    }
+
+    &__author-link {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+    }
+
+    &__arrows {
+        grid-area: arrows;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 38px;
+
+        @media screen and (min-width:768px) {
+            align-self: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            justify-self: end;
+            display: flex;
+            gap: 37px
+        }
+    }
+
+    &__arrow {
+        border: 1px solid #ECECEC;
+        padding: 13px 39px;
+        
+        &:nth-child(2) {
+            margin-left: -5px;
+            
+        }
+
+        @media screen and (min-width:768px) {
+            padding: 0px;
+            margin: 0px;
+            border: unset;
+        }
+    }
+
+
+    &__button {
+        border: 5px solid red;
+        grid-area: button;
+        display: block;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: #fff;
+        color: #444;
+        border: 2px solid #444;
+        margin: 0 auto;
+        width: 260px;
+        height: 52px;
+
+        @media screen and (min-width:768px) {
+            justify-self: end;            
+            align-self: center;
+            padding: 0px 0px;
+            width: 175px;
+            margin: unset;
+        }
+    }
+}

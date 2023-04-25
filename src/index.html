@@ -2,27 +2,25 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../dst/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <script src="./burger.js"></script>
     </head>
     <body class="page">
         <header class="header container container_mobile_disable">
             <div class="header__logo">
                 <a href="./index.html">
-                    <img class="header__logo-icon header__logo-mobile" src="../assets/images/mishka-logo-mobile.svg">
-                    <img class="header__logo-icon header__logo-tablet" src="../assets/images/mishka-logo-tablet.svg">
-                    <img class="header__logo-icon header__logo-desktop" src="../assets/images/mishka-logo-desktop.svg">
-                    <img class="header__burger-icon" onclick="burgerClick()" src="../assets/images/menu.svg">
+                    <img class="header__logo-icon header__logo-mobile" src="./images/mishka-logo-mobile.svg" alt="LOGO">
+                    <img class="header__logo-icon header__logo-tablet" src="./images/mishka-logo-tablet.svg">
+                    <img class="header__logo-icon header__logo-desktop" src="./images/mishka-logo-desktop.svg">
                 </a>
+                <img class="header__burger-icon" onclick="burgerClick()" src="./images/menu.svg">
             </div>
-            <div class="header__catalog-block" id="header__catalog-block">
+            <div class="header__catalog-block header__burger-menu">
                 <nav class="header__catalog-row" >
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link header__info">Каталог товаров</a>
+                            <a href="./catalog.html" class="header__link header__info">Каталог товаров</a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link header__info">Вязание на заказ</a>
@@ -40,7 +38,7 @@
                     </ul>
                 </nav>
             </div>
-            <nav class="header__cart-block">
+            <nav class="header__cart-block header__burger-menu">
                 <ul class="header__list">
                     <li class="header__item header__search">
                         <a href="#" class="header__link header__link-block">
@@ -70,11 +68,11 @@
                 <div class="mainpage__catalog">
                     <div class="mainpage__catalog-item">
                         <a class="mainpage__link" href="#">Предметы<br>интерьера</a>
-                        <img src="../assets/images/interior.svg">
+                        <img src="./images/interior.svg">
                     </div>
                     <div class="mainpage__catalog-item">
                         <a class="mainpage__link" href="#">Детские<br>игрушки</a>
-                        <img src="../assets/images/toy-svg.svg">
+                        <img src="./images/toy-svg.svg">
                     </div>
                 </div>
             </section>
@@ -120,7 +118,7 @@
                         <button class="featured__button btn">Заказать</button>
                     </div>
                     <div class="featured__product-wrapper border">
-                        <img class="featured__product" src="../assets/images/triple-set-desktop 1.jpg">
+                        <img class="featured__product" src="./images/triple-set-desktop 1.jpg">
                     </div>
                 </div>
             </section>
@@ -129,27 +127,27 @@
                 <div class="about__inner">
                     <ul class="about__list">
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-1.svg">
+                            <img class="about__item-image" src="./images/icon-1.svg">
                             <p class="about__item-text">Экологически чистые материалы</p>
                         </li>
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-2.svg">
+                            <img class="about__item-image" src="./images/icon-2.svg">
                             <p class="about__item-text">Скандинавский стиль по российской цене</p>
                         </li>
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-3.svg">
+                            <img class="about__item-image" src="./images/icon-3.svg">
                             <p class="about__item-text">Увеличивает лайки на фотографиях</p>
                         </li>
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-4.svg">
+                            <img class="about__item-image" src="./images/icon-4.svg">
                             <p class="about__item-text">Связано вручную с любовью и умилением</p>
                         </li>
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-5.svg">
+                            <img class="about__item-image" src="./images/icon-5.svg">
                             <p class="about__item-text">Поддержка отечественного производителя</p>
                         </li>
                         <li class="about__item">
-                            <img class="about__item-image" src="../assets/images/icon-6.svg">
+                            <img class="about__item-image" src="./images/icon-6.svg">
                             <p class="about__item-text">Поставляется в подарочной упаковке</p>
                         </li>
                     </ul>
@@ -164,8 +162,8 @@
                         <div class="reviews__author-link">@misssssiskras</div>
                     </div>
                     <div class="reviews__arrows">
-                        <img class="reviews__arrow" src="../assets/images/huge-arrow-left.svg">
-                        <img class="reviews__arrow" src="../assets/images/huge-arrow-right.svg">
+                        <img class="reviews__arrow" src="./images/huge-arrow-left.svg">
+                        <img class="reviews__arrow" src="./images/huge-arrow-right.svg">
                     </div>
                     <button class="reviews__button">Написать</button>
                 </div>
@@ -184,7 +182,7 @@
                         </li>
                     </ul>
                     <div class="contacts__map">
-                        <img class="geotag" src="../assets/images/geotag.svg">
+                        <img class="geotag" src="./images/geotag.svg">
                     </div>
                     <button class="contacts__button button">Напишите нам</button>
                 </div>
@@ -192,31 +190,31 @@
         </main>
        <footer class="footer container">
             <div class="footer__logo">
-                <img src="../assets/images/logo-footer.svg">
+                <img src="./images/logo-footer.svg">
             </div>
             <ul class="footer__list">
                 <li class="footer__item">
                     <a class="footer__link" href="#">
-                        <img src="../assets/images/instagram.icon.svg">
+                        <img src="./images/instagram.icon.svg">
                         <span class="visually-hidden">Instagram</span>
                     </a>
                 </li>
                 <li class="footer__item">
                     <a class="footer__link" href="#">
-                        <img src="../assets/images/facebook-icon.svg">
+                        <img src="./images/facebook-icon.svg">
                         <span class="visually-hidden">Facebook</span>
                     </a>
                 </li>
                 <li class="footer__item">
                     <a class="footer__link" href="#">
-                        <img src="../assets/images/twitter-icon.svg">
+                        <img src="./images/twitter-icon.svg">
                         <span class="visually-hidden">Twitter</span>
                     </a>
                 </li>
             </ul>
             <div class="footer__developer">
                 <div class="footer__developed-by">Разработано</div>
-                <img src="../assets/images/htmlacademy-icon.svg">
+                <img src="./images/htmlacademy-icon.svg">
             </div>
         </footer>
     </body>

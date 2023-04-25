@@ -29,7 +29,7 @@
     &__map {
         position: relative;
         left: -50px;
-        background-image: url('../assets/images/map-mobile.jpg');
+        background-image: url('/src/images/map-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -39,7 +39,7 @@
         margin-bottom: 42px;
 
         @media screen and (min-width:768px) {
-            background-image: url('../assets/images/map-tablet.jpg');
+            background-image: url('/src/images/map-tablet.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -51,7 +51,7 @@
         @media screen and (min-width:1150px) {
             position: static;
             grid-area: map;
-            background-image: url('../assets/images/map-desktop.jpg');
+            background-image: url('/src/images/map-desktop.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -78,7 +78,7 @@
             &:after {
                 position: absolute;
                 content: "";
-                background-image: url('../assets/images/flag.svg');
+                background-image: url('/src/images/flag.svg');
                 width: 47px;
                 height: 81px;
                 margin-top: -60px;

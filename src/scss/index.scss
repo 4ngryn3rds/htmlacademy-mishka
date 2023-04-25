@@ -1,63 +1,12 @@
-@import "./sections/header.scss";
-@import "./sections/mainpage.scss";
-@import "./sections/featured.scss";
-@import "./sections/about.scss";
-@import "./sections/reviews.scss";
-@import "./sections/contacts.scss";
-@import "./sections/footer.scss";
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    color: #000;
-}
-
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
-
-.container {
-    margin: auto;
-    padding: 0px 30px;
-
-    @media screen and (min-width: 768px) {
-        padding: 0px 50px;
-    }
-}
-
-.container_mobile_disable {
-    margin: auto;
-    padding: 0px 0px;
-
-    @media screen and (min-width: 768px) {
-        padding: 0px 50px;
-    }
-}
-
-.geotag {
-    position: relative;
-    object-position: center;
-    left: 48%;
-    top: 40%;
-
-    @media screen and (min-width:768px) {
-        top: 34%;
-    }
-}
-
+@import "blocks/header.scss";
+@import "global.scss";
+@import "blocks/mainpage.scss";
+@import "blocks/featured.scss";
+@import "blocks/about.scss";
+@import "blocks/reviews.scss";
+@import "blocks/contacts.scss";
+@import "blocks/footer.scss";
+@import "blocks/page.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/geotag.scss";
+@import "blocks/container.scss";

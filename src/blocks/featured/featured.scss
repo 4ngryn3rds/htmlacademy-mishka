@@ -10,7 +10,7 @@
         &:after {
             position: absolute;
             content: "";
-            background-image: url('../assets/images/zigzag-line-mobile.svg');
+            background-image: url('/src/images/zigzag-line-mobile.svg');
             background-size: contain;
             height: 6px;
             width: 100%;
@@ -150,7 +150,7 @@
         }
 
         &:after {
-            background-image: url('../assets/images/zigzag-line-tablet.svg');
+            background-image: url('/src/images/zigzag-line-tablet.svg');
             height: 17px;
             bottom: 0px;
         }

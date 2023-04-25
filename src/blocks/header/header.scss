@@ -33,7 +33,7 @@
             grid-area: "logo";
             width: 320px;
         }
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1150px) {
             width: initial;
         }
     }
@@ -215,6 +215,10 @@
             margin-top: 20px;
         }
     }
+
+    // &__burger-menu {
+    //     display: none;
+    // }
 
     &__cart-block {
         @media screen and (min-width:768px) {

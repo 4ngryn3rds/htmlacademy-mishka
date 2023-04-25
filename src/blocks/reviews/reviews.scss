@@ -6,7 +6,7 @@
     &:after {
         position: absolute;
         content: "";
-        background-image: url('../assets/images/zigzag-line-mobile.svg');
+        background-image: url('/src/images/zigzag-line-mobile.svg');
         background-size: auto;
         height: 6px;
         width: 100%;
@@ -14,7 +14,7 @@
     }
 
     @media screen and (min-width:768px) {
-            background-image: url('../assets/images/review-bg.jpg');
+            background-image: url('/src/images/review-bg.jpg');
             background-size: auto;
             background-repeat: no-repeat;
             padding-top: 45px;
@@ -22,7 +22,7 @@
             margin-bottom: 85px;
             
             &:after {
-                background-image: url('../assets/images/zigzag-line-tablet.svg');
+                background-image: url('/src/images/zigzag-line-tablet.svg');
                 height: 17px;
                 bottom: -85px;
             }
@@ -33,7 +33,7 @@
         margin-bottom: 90px;
 
         &:after {
-            background-image: url('../assets/images/zigzag-line-desktop.svg');
+            background-image: url('/src/images/zigzag-line-desktop.svg');
             height: 23px;
             bottom: -85px;
         }
